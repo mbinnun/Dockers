@@ -23,10 +23,10 @@ RUN chown administrator:administrator /home/administrator/.config/code-server/co
 RUN mkdir -p /home/administrator/projects
 RUN chown -R administrator:administrator /home/administrator/projects
 COPY ./local.tar.gz /home/administrator/local.tar.gz
-RUN rm -rf /home/administrator/.local
-RUN tar xzf /home/administrator/local.tar.gz -C /home/administrator
-RUN chown -R administrator:administrator /home/administrator/.local
-RUN rm /home/administrator/local.tar.gz
+#RUN rm -rf /home/administrator/.local
+#RUN tar xzf /home/administrator/local.tar.gz -C /home/administrator
+#RUN chown -R administrator:administrator /home/administrator/.local
+#RUN rm /home/administrator/local.tar.gz
 COPY ./file_explorer.tar.gz /home/administrator/file_explorer.tar.gz
 RUN tar xzf /home/administrator/file_explorer.tar.gz -C /home/administrator
 RUN chown -R administrator:administrator /home/administrator/file_explorer
