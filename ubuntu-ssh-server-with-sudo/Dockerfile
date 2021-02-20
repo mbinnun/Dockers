@@ -8,4 +8,6 @@ RUN usermod -aG sudo administrator
 RUN usermod --shell /bin/bash administrator
 RUN sed -i "s/PermitRootLogin yes/PermitRootLogin prohibit-password/g" /etc/ssh/sshd_config
 COPY ./startup.sh /root/startup.sh
+COPY ./startup-admin.sh /home/administrator/startup-admin.sh
+RUN chown administrator:administrator /home/administrator/startup-admin.sh
 ENTRYPOINT ["/bin/bash","/root/startup.sh"]

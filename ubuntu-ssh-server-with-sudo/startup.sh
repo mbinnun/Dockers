@@ -5,4 +5,5 @@ if [ ! -z ${SUDO_PASSWD} ]; then
   echo "administrator:${SUDO_PASSWD}" | chpasswd
 fi
 service ssh start
-/bin/bash
+cd /home/administrator
+sudo -H -u administrator bash /home/administrator/startup-admin.sh
