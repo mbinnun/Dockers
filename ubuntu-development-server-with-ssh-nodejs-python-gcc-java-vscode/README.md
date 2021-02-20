@@ -29,7 +29,7 @@ If you want to load your local projects folder into the "projects" directory on 
 -e FILEEXP_PASSWD=my_file_explorer_password \\<br/>
 --name=MyDevelopmentContainer mbinunn/ubuntu_development_server_with_ssh_nodejs_python_gcc_java_vscode:latest***<br/>
 <br/>
-You should now be able to:<br/>
+**You should now be able to:**<br/>
 -connect via ssh, by typing ***ssh administrator@localhost*** on your terminal, or via apps like PuTTy.<br/>
 -connect to vs-code from your browser on: http://localhost:8080<br/>
 -connect to file-explorer from your browser on: http://localhost:8081<br/>
