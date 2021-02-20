@@ -21,7 +21,7 @@ Create an empty repository by running the following command:<br/>
 ***docker exec -i -t -u git MyGitContainer bash -c "/home/git/git-create-repo.sh my_new_repo.git"***<br/>
 <br/>
 You can now clone you newly created repo:<br/>
-***git clone ssh://git@localhost:2022/~/repos/my_new_repo.git***<br/>
+***git clone ssh://git@localhost:22/~/repos/my_new_repo.git***<br/>
 <br/>
 After making chnages in the folder *my_new_repo*, you can push them to the git server:<br/>
 ***git add .***<br/>
