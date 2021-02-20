@@ -20,8 +20,8 @@ Assuming that your user has the docker privileges, here is an example for creati
 <br/>
 You should now be able to:<br/>
 - connect via ssh, by typing ***ssh administrator@localhost*** on your terminal, or via apps like PuTTy.<br/>
-- connect to vs-code from your browser on: http://localhost:8080
-- connect to file-explorer from your browser on: http://localhost:8081
+- connect to vs-code from your browser on: http://localhost:8080<br/>
+- connect to file-explorer from your browser on: http://localhost:8081<br/>
 
 -----------------------
 Optional Variables:
