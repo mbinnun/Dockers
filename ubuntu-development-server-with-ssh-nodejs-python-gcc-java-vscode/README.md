@@ -3,7 +3,7 @@ Overview
 -----------------------
 This image provides an UBUNTU container with: SSH server, web based vs-code, web based file explorer, and development CLIs.<br/>
 The development CLIs are: gcc, java, node, python, go and php.<br/>
-The container starts in a SUDO "administrator" user, so that SSH connections will be to a regular user instead of using root.
+The container starts in a SUDO "administrator" user, so that SSH connections will be using a regular user instead of using root.
 
 -----------------------
 Usage Example:
