@@ -28,7 +28,6 @@ If you want to load your local projects folder into the "projects" directory on 
 -p 22:22 \\<br/>
 -p 8080:8080 \\<br/>
 -p 8081:8081 \\<br/>
--v /path/to/your/project:/home/administrator/projects \\<br/>
 -e SUDO_PASSWD=my_admin_user_password \\<br/>
 -e CODE_PASSWD=my_vscode_password \\<br/>
 -e FILEEXP_PASSWD=my_file_explorer_password \\<br/>
