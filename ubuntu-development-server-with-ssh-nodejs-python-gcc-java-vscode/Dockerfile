@@ -22,7 +22,7 @@ COPY ./code-server/config.yaml /home/administrator/.config/code-server/config.ya
 RUN chown administrator:administrator /home/administrator/.config/code-server/config.yaml
 RUN mkdir -p /home/administrator/projects
 RUN chown -R administrator:administrator /home/administrator/projects
-COPY ./local.tar.gz /home/administrator/local.tar.gz
+#COPY ./local.tar.gz /home/administrator/local.tar.gz
 #RUN rm -rf /home/administrator/.local
 #RUN tar xzf /home/administrator/local.tar.gz -C /home/administrator
 #RUN chown -R administrator:administrator /home/administrator/.local
