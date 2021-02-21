@@ -3,7 +3,7 @@ Overview
 -----------------------
 This image provides an LXDE base UBUNTU desktop with a web based VNC access.<br/>
 The desktop is intended to be a development environment, and it contains tools like<br/>
-gcc, java, node, python, go and php-cli, and UI tools like VSCode, QtCreator etc.<br/>
+gcc, java, node, python, go and UI tools like VSCode, QtCreator etc.<br/>
 
 -----------------------
 Usage Example:
