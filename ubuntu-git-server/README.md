@@ -12,6 +12,13 @@ Assuming that your user has the docker privileges, here is an example for creati
 -e GIT_PASSWD=my_git_user_password \\<br/>
 --name=MyGitContainer mbinunn/ubuntu_git_server***<br/>
 <br/>
+Or if you want to load your own repositories folder into the container, use this:<br/>
+***docker run -d -t \\<br/>
+-p 22:22 \\<br/>
+-e GIT_PASSWD=my_git_user_password \\<br/>
+-v /path/to/your/repos-folder/:/home/git/repos
+--name=MyGitContainer mbinunn/ubuntu_git_server***<br/>
+<br/>
 The git server will be now up and running.<br/>
 
 -----------------------
