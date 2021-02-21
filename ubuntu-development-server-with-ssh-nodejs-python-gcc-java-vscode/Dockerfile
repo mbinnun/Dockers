@@ -1,7 +1,7 @@
 FROM mbinunn/ubuntu_ssh_server_with_sudo:latest
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq
-RUN apt-get -qq -y install wget curl iproute2 net-tools nmap
+RUN apt-get -qq -y install wget curl iproute2 net-tools nmap git
 RUN apt-get -qq -y install apt-transport-https gnupg gnupg2
 RUN apt-get -qq -y install zip unzip rar unrar cabextract 
 RUN apt-get -qq -y install build-essential
@@ -22,15 +22,16 @@ COPY ./code-server/config.yaml /home/administrator/.config/code-server/config.ya
 RUN chown administrator:administrator /home/administrator/.config/code-server/config.yaml
 RUN mkdir -p /home/administrator/projects
 RUN chown -R administrator:administrator /home/administrator/projects
-#COPY ./local.tar.gz /home/administrator/local.tar.gz
-#RUN rm -rf /home/administrator/.local
-#RUN tar xzf /home/administrator/local.tar.gz -C /home/administrator
-#RUN chown -R administrator:administrator /home/administrator/.local
-#RUN rm /home/administrator/local.tar.gz
+COPY ./local.tar.gz /home/administrator/local.tar.gz
+RUN rm -rf /home/administrator/.local
+RUN tar xzf /home/administrator/local.tar.gz -C /home/administrator
+RUN chown -R administrator:administrator /home/administrator/.local
+RUN rm /home/administrator/local.tar.gz
 COPY ./file_explorer.tar.gz /home/administrator/file_explorer.tar.gz
 RUN tar xzf /home/administrator/file_explorer.tar.gz -C /home/administrator
 RUN chown -R administrator:administrator /home/administrator/file_explorer
 RUN rm /home/administrator/file_explorer.tar.gz
 COPY ./.cloudcmd.json /home/administrator/.cloudcmd.json
 RUN chown administrator:administrator /home/administrator/.cloudcmd.json
+RUN chown -R administrator:administrator /home/administrator
 ENTRYPOINT ["/bin/bash","/root/startup.sh"]
