@@ -37,7 +37,7 @@ If you want to load your app folder from the host, use:<br/>
 Optional Variables:
 -----------------------
 **RUN_AS_ROOT** = Pass this variable only if you want to run the app as the container's root, otherwise do not pass it<br/>
-**SUDO_PASSWD** = Initializes the sudo "administrator" user's password<br/> 
+**SUDO_PASSWD** = Initializes the sudo user's password<br/> 
 **ROOT_PASSWD** = Initializes the root password of UBUNTU<br/> 
 
 -----------------------
