@@ -57,4 +57,7 @@ RUN rm -rf /home/administrator
 RUN tar xzf /home/administrator.tar.gz -C /home
 RUN chown -R administrator:administrator /home/administrator
 RUN rm /home/administrator.tar.gz
+RUN apt-get update -qq
+RUN apt-get -qq -y install remmina
+RUN apt-get clean
 ENTRYPOINT ["/bin/bash","/root/startup.sh"]
