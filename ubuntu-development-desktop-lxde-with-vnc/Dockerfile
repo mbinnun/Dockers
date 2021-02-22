@@ -24,18 +24,24 @@ RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" 
 RUN apt-get update -qq
 RUN apt-get -qq -y install mono-roslyn
 RUN apt-get -qq -y install firefox
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-RUN apt-get update -qq
-RUN apt-get -qq -y install google-chrome-stable
 RUN apt-get -qq -y install evince djview file-roller gpicview
 RUN apt-get -qq -y install git putty filezilla
+COPY ./chromium/debian.list /etc/apt/sources.list.d/debian.list
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DCC9EFBF77E11517
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AA8E81B4331F7F50
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A
+COPY ./chromium/chromium.pref /etc/apt/preferences.d/chromium.pref
+RUN apt-get update -qq
+RUN apt-get -qq -y install chromium
+RUN rm /etc/apt/sources.list.d/debian.list
+RUN rm /etc/apt/preferences.d/chromium.pref
+RUN apt-get update -qq
 RUN apt-get clean
 RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN ln -s /usr/bin/pip3 /usr/bin/pip
 RUN npm -g install node-gyp
 RUN npm -g install express-generator
-RUN sed -i "s/google-chrome-stable/google-chrome-stable --no-sandbox/" /usr/share/applications/google-chrome.desktop
 RUN sed -i "s#/usr/sbin/gparted#sudo /usr/sbin/gparted#" /usr/share/applications/gparted.desktop
 RUN sed -i "s/Terminal=false/Terminal=true/" /usr/share/applications/gparted.desktop
 COPY ./index.html /usr/share/novnc/index.html
