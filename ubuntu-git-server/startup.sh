@@ -6,4 +6,4 @@ if [ ! -z ${GIT_PASSWD} ]; then
 fi
 service ssh start
 cd /home/git
-sudo -H -u git bash /home/git/startup-git.sh
+sudo -H -u git -E bash /home/git/startup-git.sh

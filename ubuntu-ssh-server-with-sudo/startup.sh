@@ -6,4 +6,4 @@ if [ ! -z ${SUDO_PASSWD} ]; then
 fi
 service ssh start
 cd /home/administrator
-sudo -H -u administrator bash /home/administrator/startup-admin.sh
+sudo -H -u administrator -E bash /home/administrator/startup-admin.sh

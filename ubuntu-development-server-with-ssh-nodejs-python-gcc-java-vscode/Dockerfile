@@ -10,6 +10,7 @@ RUN apt-get -qq -y install default-jre default-jdk
 RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 RUN apt-get -qq -y install nodejs
 RUN curl -fsSL https://code-server.dev/install.sh | sh
+RUN apt-get -qq -y install php-cli composer golang
 RUN apt-get clean
 RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN ln -s /usr/bin/pip3 /usr/bin/pip
