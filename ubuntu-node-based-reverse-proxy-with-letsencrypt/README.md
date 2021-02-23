@@ -50,7 +50,7 @@ You should implement the **proxy-list.json** file and use it with the **-v switc
 <br/>
 **NOTES:**<br/><br/>
 -When **"ssl"** is **1**, the domain will be queried on port 443. Otherwise it'll be queried on port 80.<br/><br/>
--If using **"HOST_IP"** as the value of **target_ip**, it'll automatically calculate the container's host machine IP address. There is no need to calualte host IP yourself.<br/>
+-If using **"HOST_IP"** as the value of **target_ip**, it'll automatically calculate the container's host machine IP address. There is no need to calualte host IP by yourself.<br/>
 
 -----------------------
 SSL Certificates:
