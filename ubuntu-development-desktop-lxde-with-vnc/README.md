@@ -20,7 +20,7 @@ Assuming that your user has the docker privileges, here is an example for creati
 -e VNC_DEPTH=16 \\<br/>
 --name=MyDesktopContainer mbinunn/ubuntu_development_desktop-lxde_with_vnc:latest***<br/>
 <br/>
-**Note:** The --privileged swith is not mandatory and you can safely run in a non-privileged mode, but it is required if you want access to the physical machine devices.
+**Note:** The --privileged swith is not mandatory and you can safely run in a non-privileged mode, but it is required if you want access to the physical machine devices.<br/>
 <br/>
 If you want to load your local documents folder into the "Documents" directory on the container, use:<br/>
 ***docker run -d -t --privileged \\<br/>
