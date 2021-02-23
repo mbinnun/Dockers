@@ -34,7 +34,7 @@ If you don't want to send, use:<br/>
 --name MyProxyContainer mbinunn/ubuntu_node_based_reverse_proxy_with_letsencrypt***<br/>
 <br/>
 **NOTE:**<br/>
-The above commands will start the container in interactive mode, so that you'll see the proxy server response.<br/>
+The above commands will start the container in the interactive mode, so that you'll see the proxy server response.<br/>
 If you want to run in detached mode, use the **-d switch** instead of **-i**.
 <br/>
 **The proxy-list.json file:**<br/><br/>
