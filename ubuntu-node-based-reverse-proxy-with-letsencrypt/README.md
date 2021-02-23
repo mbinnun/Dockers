@@ -40,7 +40,7 @@ If you want to run the server in detached mode, use the **-d switch** instead of
 -----------------------
 The proxy-list.json file:
 -----------------------
-You should implement the proxy-list.json file and use it with the **-v switch**. The file should look like this:<br/>
+You should implement the **proxy-list.json** file and use it with the **-v switch**. The file should look like this:<br/>
 [<br/>
   {"domain":"mydomain.com", "ssl":1, "target_ip":"localhost"   , "target_port":3000},<br/>
   {"domain":"example1.com", "ssl":0, "target_ip":"192.168.0.1" , "target_port":8000},<br/>
