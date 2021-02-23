@@ -32,8 +32,8 @@ The server should be now up and starting getting emails and POP/IMAP requests.<b
 -----------------------
 Creating an e-mail account:
 -----------------------
-To create e-mail accounts in the server, use:
-***docker exec -i -t -u root MyPostfixContainer bash -c "/root/mail-create-user.sh username password"***
+To create e-mail accounts in the server, use:<br/>
+***docker exec -i -t -u root MyPostfixContainer bash -c "/root/mail-create-user.sh username password"***<br/>
 
 -----------------------
 Optional Variables:
