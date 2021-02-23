@@ -28,8 +28,9 @@ If you want to load your app folder from the host, use:<br/>
 --name=MyNodeContainer mbinunn/ubuntu_node_app_executor***<br/>
 <br/>
 **NOTES:**<br/><br/>
+-You must implement the **npm start** option in your app's **package.json** file, otherwise the app won't run!<br/><br/>
 -The port 3000 on the usage example is for the example app that will run by default. Change the port to the needs of your own app.<br/><br/>
--In the usage example I'm running the container in the interactive mode with the -i switch, so that we're able to see the app's output. You can use the -d switch to run in detached mode instead.<br/><br/>
+-In the usage example I'm running the container in the interactive mode with the **-i** switch, so that we're able to see the app's output. You can use the **-d** switch to run in detached mode instead.<br/><br/>
 -To have your app running continously in a production server, use --restart=always so that your app will be automatically running after a host server restart.<br/><br/>
 -The ENV_VAR is only a variable for the example app. You can pass any "-e" variable that you want, and then get it in your app by calling<br/>***const YOUR_VAR = process.env.YOUR_VARIABLE || '';***<br/>(same as you would getting a regular bash exported variable).<br/>
 
@@ -37,8 +38,8 @@ If you want to load your app folder from the host, use:<br/>
 Optional Variables:
 -----------------------
 **RUN_AS_ROOT** = Pass this variable only if you want to run the app as the container's root, otherwise do not pass it<br/>
-**SUDO_PASSWD** = Initializes the sudo user's password<br/> 
-**ROOT_PASSWD** = Initializes the root password of UBUNTU<br/> 
+**SUDO_PASSWD** = Initializes the sudo user's password<br/>
+**ROOT_PASSWD** = Initializes the root password of UBUNTU<br/>
 
 -----------------------
 Saving your own image

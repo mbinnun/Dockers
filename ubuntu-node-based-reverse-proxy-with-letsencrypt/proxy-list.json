@@ -1,0 +1,4 @@
+[
+  {"domain":"mydomain.com", "ssl":1, "target_ip":"localhost", "target_port":3000},
+  {"domain":"example2.com", "ssl":0, "target_ip":"HOST_IP"  , "target_port":8080}
+]
