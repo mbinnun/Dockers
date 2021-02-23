@@ -58,6 +58,7 @@ SSL Certificates:
 -----------------------
 Use the following command to generate an SSL certificate for a domain:<br/>
 ***docker exec -i -t -u root MyProxyContainer bash -c "/root/ssl-cert-generate.sh MY_NEW_DOMAIN.com"***<br/>
+(you'll have to enter an e-mail when doing this for the first time)<br/>
 <br/>
 Use the following command to renew all the existing certificates:<br/>
 ***docker exec -i -t -u root MyProxyContainer bash -c "/root/ssl-renew.sh"***<br/>
