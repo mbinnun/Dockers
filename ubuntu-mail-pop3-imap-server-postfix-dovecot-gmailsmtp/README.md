@@ -32,7 +32,7 @@ If you want to load your own /var/mail into the container, use:<br/>
 -p 25:25 \\<br/>
 -p 110:110 \\<br/>
 -p 143:143 \\<br/>
--v /path/to/local/var/mail/folder:/var/mail //<br/>
+-v /path/to/local/var/mail/folder:/var/mail \\<br/>
 -e EMAIL_DOMAIN="MyMailDomain.com, MyOtherMailDomain.net" \\<br/>
 --name MyPostfixContainer mbinunn/ubuntu_mail_pop3_imap_server_postfix_dovecot_gmailsmtp***<br/>
 <br/>
