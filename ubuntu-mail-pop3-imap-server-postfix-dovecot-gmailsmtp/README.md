@@ -50,7 +50,7 @@ Optional Variables:
 **EMAIL_DOMAIN** = Comma seperated list of accepted domains<br/>
 **USE_GMAIL_SMTP** = Send it only if you want GMail SMTP, otherwise do not send<br/>
 **GMAIL_SMTP_USER** = Full GMail user name including @gmail.com<br/>
-**GMAIL_SMTP_PASSWD** = Gmail account's password<br/
+**GMAIL_SMTP_PASSWD** = Gmail account's password<br/>
 **ROOT_PASSWD** = Initializes the root password of UBUNTU<br/> 
 
 -----------------------
