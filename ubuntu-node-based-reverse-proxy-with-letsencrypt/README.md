@@ -36,6 +36,7 @@ If you don't want to send, use:<br/>
 **NOTE:**<br/>
 The above commands will start the container in the interactive mode, so that you'll see the proxy server response.<br/>
 If you want to run the server in detached mode, use the **-d switch** instead of **-i**.<br/>
+Also consider using --restart=always to run the container continously when running in production.
 
 -----------------------
 The proxy-list.json file:
