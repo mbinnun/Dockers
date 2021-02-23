@@ -1,9 +1,9 @@
 -----------------------
 Overview
 -----------------------
-This image provides an UBUNTU container with a preinstalled POSTFIX and DOVECOT server for getting and sending e-mails.
-It has a built in option to use your GMail account as an SMTP relay.
-The incoming mails can be downloaded by a POP3/SMTP client.
+This image provides an UBUNTU container with a preinstalled POSTFIX and DOVECOT server for getting and sending e-mails.<br/>
+It has a built in option to use your GMail account as an SMTP relay.<br/>
+The incoming mails can be downloaded by a POP3/SMTP client.<br/>
 
 -----------------------
 Usage Example:
