@@ -35,9 +35,9 @@ If you want to load your local documents folder into the "Documents" directory o
 -v /path/to/your/documents:/home/administrator/Documents \\<br/>
 --name=MyDesktopContainer mbinunn/ubuntu_development_desktop-lxde_with_vnc:latest***<br/>
 <br/>
-**You should now be able to:**<br/>
--connect via ssh, by typing ***ssh administrator@localhost*** on your terminal, or via apps like PuTTy.<br/>
--connect to the desktop from your browser on: http://localhost:6080<br/>
+**You should now be able to:**<br/><br/>
+-connect via ssh, by typing ***ssh administrator@localhost*** on your terminal, or via apps like PuTTy.<br/><br/>
+-connect to the desktop from your browser on: http://localhost:6080<br/><br/>
 -connect through your VNC client on localhost:5900<br/>
 
 -----------------------
