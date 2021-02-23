@@ -26,7 +26,16 @@ If you want to use the GMail SMTP feature, use:<br/>
 -e GMAIL_SMTP_USER=MyGmailUser@gmail.com \\<br/>
 -e GMAIL_SMTP_PASSWD=MyGmailPassword \\<br/>
 --name MyPostfixContainer mbinunn/ubuntu_mail_pop3_imap_server_postfix_dovecot_gmailsmtp***<br/>
-<br />
+<br/>
+If you want to load your own /var/mail into the container, use:<br/>
+***docker run -d -t \\<br/>
+-p 25:25 \\<br/>
+-p 110:110 \\<br/>
+-p 143:143 \\<br/>
+-v /path/to/local/var/mail/folder:/var/mail //<br/>
+-e EMAIL_DOMAIN="MyMailDomain.com, MyOtherMailDomain.net" \\<br/>
+--name MyPostfixContainer mbinunn/ubuntu_mail_pop3_imap_server_postfix_dovecot_gmailsmtp***<br/>
+<br/>
 The server should be now up and starting getting emails and POP/IMAP requests.<br/>
 
 -----------------------
