@@ -13,6 +13,7 @@ Assuming that your user has the docker privileges, here is an example for creati
 -p 80:80 \\<br/>
 -p 443:443 \\<br/>
 -v /path/to/your/WWW/folder:/home/administrator/WWW \\<br/>
+-e SUDO_PASSWD=admin123 \\<br/>
 --name MyPhpContainer mbinunn/ubuntu_apache2_php_server***<br/>
 <br/>
 If you have multiple domains or multiple websites in your WWW folder, and you want to implement your own **vhosts.conf** file, then use:<br/>
@@ -21,6 +22,7 @@ If you have multiple domains or multiple websites in your WWW folder, and you wa
 -p 443:443 \\<br/>
 -v /path/to/your/WWW/folder:/home/administrator/WWW \\<br/>
 -v /path/to/your/vhosts.conf:/etc/apache2/sites-available/000-default.conf \\<br/>
+-e SUDO_PASSWD=admin123 \\<br/>
 --name MyPhpContainer mbinunn/ubuntu_apache2_php_server***<br/>
 <br/>
 **NOTE:**<br/>
