@@ -30,4 +30,6 @@ COPY ./WWW/index.php /home/administrator/WWW/index.php
 COPY ./vhosts.conf /etc/apache2/sites-available/000-default.conf
 COPY ./php.ini /etc/php/7.4/apache2
 RUN chown -R administrator:administrator /home/administrator
+COPY ./envvars /etc/apache2/envvars
 ENTRYPOINT ["/bin/bash","/root/startup.sh"]
+

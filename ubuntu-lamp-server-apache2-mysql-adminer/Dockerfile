@@ -22,4 +22,5 @@ COPY ./startup-admin.sh /home/administrator/startup-admin.sh
 RUN chown administrator:administrator /home/administrator/startup-admin.sh
 RUN chown -R administrator:administrator /home/administrator
 COPY ./miniserv.conf /etc/webmin/miniserv.conf
+COPY ./envvars /etc/apache2/envvars
 ENTRYPOINT ["/bin/bash","/root/startup.sh"]
