@@ -3,8 +3,10 @@ if [ ! -z ${ROOT_PASSWD} ]; then
 fi
 
 if [ ! -z ${USE_GMAIL_SMTP} ]; then
-  mv /etc/postfix/main.cf /etc/postfix/main.cf.old
-  mv /etc/postfix/main.cf.relay /etc/postfix/main.cf
+  if [ -f /etc/postfix/main.cf.relay ]; then
+    mv /etc/postfix/main.cf /etc/postfix/main.cf.old
+    mv /etc/postfix/main.cf.relay /etc/postfix/main.cf
+  fi
 fi
 if [ ! -z ${GMAIL_SMTP_USER} ]; then
   sed -i "s/MySmtpUser@gmail.com/${GMAIL_SMTP_USER}/g" /etc/postfix/sasl_passwd
