@@ -27,4 +27,4 @@ https://github.com/mbinnun/Dockers/tree/main/ubuntu-development-desktop-lxde-wit
 <br/>
 Visit my Linkedin profile at:<br/>
 https://www.linkedin.com/in/moshe-binnun-computer-engineer-fullstack-web-developer-team-leader/<br/>
-https://moshe.binnun.me<br/>
+https://moshe.binnun.me/<br/>
