@@ -14,6 +14,8 @@ Assuming that your user has the docker privileges, here is an example for creati
 --name=MySshSudoContainer mbinunn/ubuntu_22.04_normal_cli_gcc_etc***<br/>
 <br/>
 You should now be able to connect by typing ***ssh administrator@localhost*** on your terminal, or via apps like PuTTy.<br/>
+<br>
+*Note: use **mbinunn/ubuntu_22.04_normal_cli_gcc_etc:nophp** image tag if you want to avoid the pre-installed PHP-CLI.*<br>
 
 -----------------------
 Optional Variables:
