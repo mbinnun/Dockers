@@ -31,3 +31,10 @@ After making changes, installing software or changing *startup.sh*, save your ow
 Source code
 -----------------------
 See my source code on https://github.com/mbinnun/Dockers/tree/main/ubuntu-22.04-normal-cli-gcc-etc
+
+-----------------------
+Credits
+-----------------------
+written by mbinnun <br>
+https://moshe.binnun.me/ <br>
+https://moshe.binnun.me/%D7%9E%D7%A9%D7%94-%D7%91%D7%9F-%D7%A0%D7%95%D7%9F
